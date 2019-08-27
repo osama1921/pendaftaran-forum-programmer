@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+<div class="navbar">
+	<div class="logo">
+	<p><a href="index.html">Asosiasi Programmer</a></p>
+	</div>
+	<div class="btn">
+		<span></span>
+		<span></span>
+		<span></span>
+	</div>
+	<div class="menu">
+		<a href="index.html">Home</a>
+		<a href="regis.html">Register</a>
+	</div>
+</div>
+<div class="header">
+		<div class="content">
+			<h1>Register</h1>
+			<div class="border"></div>
+			<form class="content-form" action="proses_regis.php"  method="POST" >
+				<label>NIK</label>
+				<input type="text" name="nik" class="content-form-text" placeholder="NIK" required>
+				<label>Nama</label>
+				<input type="text" name="nama" class="content-form-text" placeholder="Nama" required>
+				<label>Tanggal Lahir</label>
+				<input type="date" name="ttl" class="content-form-text" required>
+				<label>Alamat</label>
+				<textarea placeholder="Alamat" class="content-form-text" name="alamat" required></textarea>
+				<label>Provinsi</label>
+				<input type="text" name="provinsi" class="content-form-text" placeholder="Provinsi" required>
+				<label>Email</label>
+				<input type="Email" name="email" class="content-form-text" placeholder="email" required>
+				<label>Password</label>
+				<input type="password" name="password" class="content-form-text" placeholder="Password" required>
+				<input type="submit" name="regis" class="content-form-submit" value="Register">
+			</form>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+		</div>
+</div>
+
+
+<script type="text/javascript">
+	$(".btn").on("click",function(){
+		$('.menu').toggleClass("show");
+	});
+</script>
+</body>
+</html>
